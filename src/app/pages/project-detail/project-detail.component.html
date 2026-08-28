@@ -1,0 +1,59 @@
+<header class="nav">
+  <div class="container nav__inner">
+    <a routerLink="/" class="nav__logo">YJ Portfolio</a>
+    <a routerLink="/" fragment="projects" class="nav__back">← 프로젝트 목록으로</a>
+  </div>
+</header>
+
+<ng-container *ngIf="project; else empty">
+  <section class="section detail">
+    <div class="container">
+      <h1 class="detail__title">
+        {{ project.title }} <span class="detail__tag">{{ project.tag }}</span>
+      </h1>
+
+      <div class="detail__thumb" [style.background]="project.colors[0]"></div>
+
+      <dl class="detail__meta">
+        <div><dt>프로젝트 기간</dt><dd>{{ project.period }}</dd></div>
+        <div><dt>담당 역할</dt><dd>{{ project.role }}</dd></div>
+        <div><dt>기술 스택</dt><dd>{{ project.stack.join(', ') }}</dd></div>
+      </dl>
+
+      <p class="detail__intro">{{ project.intro }}</p>
+
+      <h2 class="detail__subhead">담당 업무</h2>
+      <ul class="detail__list">
+        <li *ngFor="let d of project.duties">{{ d }}</li>
+      </ul>
+
+      <h2 class="detail__subhead">어려웠던 점</h2>
+      <p class="detail__text">{{ project.challenge }}</p>
+
+      <h2 class="detail__subhead">해결 방법</h2>
+      <p class="detail__text">{{ project.solution }}</p>
+
+      <h2 class="detail__subhead">결과 및 배운 점</h2>
+      <p class="detail__text">{{ project.result }}</p>
+
+      <h2 class="detail__subhead">UI 컬러</h2>
+      <div class="detail__colors">
+        <span *ngFor="let c of project.colors" [style.background]="c">{{ c }}</span>
+      </div>
+    </div>
+  </section>
+</ng-container>
+
+<ng-template #empty>
+  <div class="section container">
+    <p>프로젝트를 찾을 수 없습니다.</p>
+    <a routerLink="/" class="btn btn--accent">← 홈으로</a>
+  </div>
+</ng-template>
+
+<footer class="footer">
+  <div class="container">
+    © 2026 YJ Portfolio
+    <a routerLink="/" fragment="projects">Projects →</a>
+  </div>
+</footer>
