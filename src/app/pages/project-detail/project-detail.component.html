@@ -12,7 +12,7 @@
         {{ project.title }} <span class="detail__tag">{{ project.tag }}</span>
       </h1>
 
-      <div class="detail__thumb" [style.background]="project.colors[0]"></div>
+      <img class="detail__thumb" [src]="project.image" [alt]="project.title" />
 
       <dl class="detail__meta">
         <div><dt>프로젝트 기간</dt><dd>{{ project.period }}</dd></div>
