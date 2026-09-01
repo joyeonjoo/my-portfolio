@@ -1,5 +1,6 @@
 export interface ProjectDetail {
   id: string;
+  image: string;
   title: string;
   tag: string;
   period: string;
@@ -16,6 +17,7 @@ export interface ProjectDetail {
 export const PROJECTS: ProjectDetail[] = [
   {
     id: 'miraen',
+    image: 'assets/images/miraen_thumb.png',
     title: '미래엔 초등교육 쇼핑몰',
     tag: 'Angular',
     period: '2024.03 ~ 2024.08',
@@ -41,6 +43,7 @@ export const PROJECTS: ProjectDetail[] = [
   },
   {
     id: 'pod',
+    image: 'assets/images/pod_thumb.png',
     title: 'POD 플랫폼 (굿즈베이커리)',
     tag: 'Angular',
     period: '2024.06 ~ 2024.12',
@@ -66,6 +69,7 @@ export const PROJECTS: ProjectDetail[] = [
   },
   {
     id: 'coway',
+    image: 'assets/images/coway_thum.png',
     title: '코웨이 굿즈몰',
     tag: 'Renewal',
     period: '2024.01 ~ 2024.05',
@@ -86,6 +90,7 @@ export const PROJECTS: ProjectDetail[] = [
   },
   {
     id: 'airoommate',
+    image: 'assets/images/airoommate_thumb.png',
     title: 'AI룸메',
     tag: 'UI/UX',
     period: '2017.06 ~ 2022.12',
