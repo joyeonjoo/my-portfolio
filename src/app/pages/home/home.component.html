@@ -73,7 +73,7 @@
     <h2 class="section-title">주요 프로젝트를 소개합니다.</h2>
     <div class="projects__grid">
       <a class="project-card" *ngFor="let p of projects" [routerLink]="['/projects', p.id]">
-        <div class="project-card__thumb" [style.background]="p.colors[0]"></div>
+        <img class="project-card__thumb" [src]="p.image" [alt]="p.title" loading="lazy" />
         <div class="project-card__body">
           <h3>{{ p.title }}</h3>
           <div class="project-card__tags">
