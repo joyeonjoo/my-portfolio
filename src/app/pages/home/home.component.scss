@@ -142,7 +142,9 @@
 
   &__thumb {
     height: 140px;
-    opacity: 0.85;
+    width: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   &__body {
