@@ -34,8 +34,10 @@
 
   &__thumb {
     height: 260px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
     border-radius: var(--radius-lg);
-    opacity: 0.85;
     margin-bottom: 28px;
   }
 
