@@ -1,0 +1,104 @@
+<header class="nav">
+  <div class="container nav__inner">
+    <a routerLink="/" class="nav__logo">YJ Portfolio</a>
+    <a routerLink="/" class="nav__back">← 홈으로</a>
+  </div>
+</header>
+
+<section class="section ds-intro">
+  <div class="container">
+    <span class="section-eyebrow">DESIGN SYSTEM</span>
+    <h1 class="ds-title">디자인 시스템을 만들고 운영하는 방식</h1>
+    <p class="ds-desc">
+      지금 보고 계신 이 포트폴리오 사이트 자체가 하나의 사례입니다.<br />
+      컬러·타이포그래피·컴포넌트 규칙을 SCSS 변수와 mixin으로 정의하고,
+      모든 페이지가 같은 기준을 따르도록 구성했습니다.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Color</h2>
+    <p class="ds-sub">서비스 톤에 맞춰 역할별로 컬러를 정의하고, 임의로 색을 추가하지 않는 것을 원칙으로 합니다.</p>
+    <div class="color-grid">
+      <div class="color-card" *ngFor="let c of colors">
+        <div class="color-swatch" [style.background]="c.hex"></div>
+        <div class="color-info">
+          <strong>{{ c.name }}</strong>
+          <span class="color-hex">{{ c.hex }}</span>
+          <span class="color-usage">{{ c.usage }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Typography</h2>
+    <p class="ds-sub">Pretendard 기반, 5단계 스케일로 위계를 정리했습니다.</p>
+    <div class="type-list">
+      <div class="type-row" *ngFor="let t of typeScale">
+        <div class="type-meta">
+          <strong>{{ t.label }}</strong>
+          <span>{{ t.size }} · {{ t.weight }}</span>
+        </div>
+        <div class="type-sample" [style.font-size]="t.size" [style.font-weight]="t.weight">{{ t.sample }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Spacing &amp; Radius</h2>
+    <div class="token-grid">
+      <div class="token-card" *ngFor="let s of spacing">
+        <span class="token-value">{{ s.value }}</span>
+        <strong>{{ s.token }}</strong>
+        <span class="token-usage">{{ s.usage }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Components</h2>
+    <p class="ds-sub">반복 사용되는 요소는 컴포넌트로 만들어 일관성을 유지합니다.</p>
+
+    <div class="component-block">
+      <p class="component-label">Buttons</p>
+      <div class="component-row">
+        <button class="btn">Default</button>
+        <button class="btn btn--accent">Accent</button>
+      </div>
+    </div>
+
+    <div class="component-block">
+      <p class="component-label">Tags</p>
+      <div class="component-row">
+        <span class="ds-tag">Angular</span>
+        <span class="ds-tag">TypeScript</span>
+        <span class="ds-tag">SCSS</span>
+        <span class="ds-tag">Figma</span>
+      </div>
+    </div>
+
+    <div class="component-block">
+      <p class="component-label">Card</p>
+      <div class="ds-card-sample">
+        <div class="ds-card-sample__thumb"></div>
+        <div class="ds-card-sample__body">
+          <strong>프로젝트 카드</strong>
+          <span>썸네일 · 태그 · 설명 · 링크 순서로 구성된 반복 요소</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">© 2026 YJ Portfolio</div>
+</footer>
