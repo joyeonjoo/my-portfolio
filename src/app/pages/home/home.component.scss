@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     height: 64px;
+    gap: 24px;
   }
 
   &__logo {
@@ -23,6 +24,8 @@
     gap: 28px;
     font-size: 14px;
     font-weight: 600;
+    flex-wrap:nowrap;
+    overflow-x:auto;
 
     a:hover { color: var(--color-accent); }
   }
