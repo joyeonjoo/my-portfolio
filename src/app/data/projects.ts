@@ -20,8 +20,8 @@ export const PROJECTS: ProjectDetail[] = [
     image: 'assets/images/miraen_thumb.png',
     title: '미래엔 초등교육 쇼핑몰',
     tag: 'Angular',
-    period: '2024.03 ~ 2024.08',
-    role: '웹 퍼블리셔 (100%)',
+    period: '2026.01 ~ 2026.09',
+    role: 'UI,UX디자인(30%).퍼블리셔 (100%)',
     stack: ['Angular', 'TypeScript', 'HTML5', 'SCSS', 'Git', 'Figma'],
     intro:
       '초등 교육 관련 상품을 판매하는 쇼핑몰을 Angular 기반으로 구축하고, 공통 UI 컴포넌트를 설계하여 유지보수성과 재사용성을 높였습니다.',
@@ -46,8 +46,8 @@ export const PROJECTS: ProjectDetail[] = [
     image: 'assets/images/pod_thumb.png',
     title: 'POD 플랫폼 (굿즈베이커리)',
     tag: 'Angular',
-    period: '2024.06 ~ 2024.12',
-    role: '웹 퍼블리셔 (100%)',
+    period: '2024.03 ~ 2024.12',
+    role: 'UI/UX디자인(100%), 퍼블리셔 (100%)',
     stack: ['Angular', 'TypeScript', 'HTML5', 'SCSS', 'Git', 'Figma'],
     intro:
       'POD(Print on Demand) 기반 굿즈 제작 플랫폼 구축 프로젝트입니다. 기획자가 별도로 없는 환경에서 유저·관리자 페이지의 화면 흐름과 UI 구조를 함께 고민하며 퍼블리싱을 전담했습니다.',
@@ -72,8 +72,8 @@ export const PROJECTS: ProjectDetail[] = [
     image: 'assets/images/coway_thum.png',
     title: '코웨이 굿즈몰',
     tag: 'Renewal',
-    period: '2024.01 ~ 2024.05',
-    role: '웹 퍼블리셔',
+    period: '2025.01 ~ 2025.05',
+    role: 'UI/UX디자인,퍼블리셔',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'Git', 'Figma'],
     intro:
       '코웨이 굿즈몰 PC/Mobile 화면을 반응형으로 리뉴얼한 프로젝트입니다. 크로스 브라우징과 웹 표준을 고려한 퍼블리싱을 진행했습니다.',
