@@ -43,7 +43,10 @@ export const PROJECTS: ProjectDetail[] = [
   },
   {
     id: 'pod',
-    image: 'assets/images/pod_thumb.png','assets/images/pod_custom.png'
+    image: [
+      'assets/images/pod_thumb.png',
+      'assets/images/pod_custom.png'
+    ],
     title: 'POD 플랫폼 (굿즈베이커리)',
     tag: 'Angular',
     period: '2024.03 ~ 2024.12',
