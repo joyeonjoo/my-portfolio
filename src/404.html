@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Undoo's Web Portfolio</title>
+
+  <script>
+    (function () {
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      var base = '/my-portfolio';
+
+      // 현재 요청한 경로에서 /my-portfolio 부분을 제거
+      var route = path.indexOf(base) === 0
+        ? path.substring(base.length)
+        : path;
+
+      // 루트 자체는 저장하지 않음
+      if (route && route !== '/') {
+        sessionStorage.setItem(
+          'angular_redirect',
+          route + search + hash
+        );
+      }
+
+      // Angular 앱의 정상 진입점으로 이동
+      window.location.replace(base + '/');
+    })();
+  </script>
+</head>
+
+<body>
+  <p>페이지를 불러오는 중입니다...</p>
+</body>
+</html>
