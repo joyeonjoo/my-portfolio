@@ -17,7 +17,7 @@ export interface ProjectDetail {
 export const PROJECTS: ProjectDetail[] = [
   {
     id: 'miraen',
-    image: 'assets/images/miraen_thumb.png',
+    image: 'assets/images/miraen_thumb.png'
     title: '미래엔 초등교육 쇼핑몰',
     tag: 'Angular',
     period: '2026.01 ~ 2026.09',
@@ -43,7 +43,7 @@ export const PROJECTS: ProjectDetail[] = [
   },
   {
     id: 'pod',
-    image: 'assets/images/pod_thumb.png',
+    image: 'assets/images/pod_thumb.png','assets/images/pod_custom.png'
     title: 'POD 플랫폼 (굿즈베이커리)',
     tag: 'Angular',
     period: '2024.03 ~ 2024.12',
